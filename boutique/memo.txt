@@ -1,0 +1,31 @@
+Fichiers :
+
+
+    Inclusions:
+
+    init.inc.php
+    fonction.inc.php
+    header.inc.php
+    footer.inc.php
+
+
+    Inclusions :
+
+    init.inc.php                        => header.inc.php
+    fonction.inc.php                    => init.inc.php
+    header.inc.php                      => index.php
+    footer.inc.php                      => index.php
+
+
+Constantes :
+
+    define ( 'URL', 'http://...' );     => Permet de changer l'URL à un seul endroit (init.inc.php)
+
+    $pseudo = $_POST['pseudo']          => Permet de stocker l'item dans une variable (gain de temps lors de la saisie)
+
+Sessions :
+
+    déconnexion :
+
+        unset()                         => session 'inactive' mais infos conservées (panier etc)
+        session_destroy()               => session détruite, pas d'infos conservées

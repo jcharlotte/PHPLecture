@@ -1,0 +1,44 @@
+Idée de TP pratique :
+
+	Création d'une application type "WhatsApp"
+
+S'inspirer de l'exemple 'dialogue.php' fait en cours (Dossier 07-PDO)
+
+Les instructions suivantes sont des repères pour se lancer. Il faudra certainement améliorer la bdd et les fonctionnalités.
+
+//--------------------------------
+1 - Création BDD :
+	table :	membre
+			message
+			conversation
+
+Une conversation sera reliée à plusieurs messages et plusieurs membres !! (pensez aux relations entre les tables)
+
+//--------------------------------
+2 Inscription
+	- formulaire => insertion ('membre')
+
+//--------------------------------
+3 - Connexion
+	- formulaire => select (pour comparaison 'membre')
+
+//--------------------------------
+4 - Profil
+
+	- formulaire de recherche (select) pour ajouter des "amis" pour converser
+		Si on choisi un ami on lance une conversation
+
+//--------------------------------
+5 - Ajout et affichage des messages
+
+	-> Création conversation :
+
+		- formulaire : pour ecrire des messages (insert)
+		- Affichage : instantané (select) lors de la validation du formulaire
+
+	-> ouvrir une conversation :
+
+		- Récupération message (select)
+		- formulaire pour écrire des messages (insert)
+
+//--------------------------------
